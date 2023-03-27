@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kanban</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/logo.svg" alt="logo" />
+      <section class="box_links">
+        <nav>
+          <ul>
+            <li class="link_Button">
+              <img
+                class="imgLink"
+                src="./assets/tablet-portrait.svg"
+                alt="tablet"
+              />
+              Boards
+            </li>
+            <li class="link_Button">
+              <img class="imgLink" src="./assets/people.svg" alt="people" />
+              Equipes
+            </li>
+            <li class="link_Button">
+              <img
+                class="imgLink"
+                src="./assets/document-text.svg"
+                alt="document"
+              />
+              Relatórios
+            </li>
+            <li class="link_Button">
+              <img class="imgLink" src="./assets/cog.svg" alt="document" />
+              Ajustes
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="container_Main">
+      <section class="title_icon_image">
+        <h1>Meu kanban <img src="./assets/etiqueta.svg" alt="" /></h1>
+        <img class="perfil" src="./assets/perfil.jpg" alt="my picture" />
+      </section>
+      <section class="box_search">
+        <button onclick="filterCards()"> 
+          <img src="./assets/filtericon.svg" alt="icon filter" /> Filtrar
+        </button>
+        <div class="search">
+          <img src="./assets/search.svg" alt="" />
+          <input
+            type="text"
+            placeholder="Busque por cards, assuntos ou responsáveis..."
+          />
+        </div>
+      </section>
+      <section class="box_tasks">
+        <ul class="cards">
+          <h2>A fazer</h2>
+          <li class="card_task">
+            <h3>#boraCodar um Kanban 🧑‍💻</h3>
+            <p>
+              Novo desafio do #boraCodar da Rocketseat, onde é proposto
+              construir um quadro de Kanban.
+            </p>
+            <div class="box_tag">
+              <h4>rocketseat</h4>
+              <h4>desafio</h4>
+            </div>
+          </li>
+          
+          <div class="card_task">
+            <h3>Manter a ofensiva 🔥</h3>
+            <p>
+              Manter minha atividade na plataforma da Rocketseat para não perder
+              a ofensiva
+            </p>
+            <div class="box_tag">
+              <h4>rocketseat</h4>
+            </div>
+          </div>
+          <div class="card_task">
+            <h3>Almoçar 🥗</h3>
+            <p>
+              Me alimentar, aproveitando um momento de descanso para recarregar
+              minhas energias durante o almoço
+            </p>
+            <div class="box_tag">
+              <h4>autocuidado</h4>
+            </div>
+          </div>
+        </ul>
+        <ul class="cards">
+          <h2>Fazendo</h2>
+          <li class="card_task">
+            <h3>Conferir o novo desafio 🚀</h3>
+            <p>
+              Conferir o novo projeto do #boraCodar para fazê-lo da melhor
+              maneira possível
+            </p>
+            <div class="box_tag">
+              <h4>rocketseat</h4>
+              <h4>desafio</h4>
+            </div>
+          </li>
+          <li class="card_task">
+            <h3>Ser incrível 😎</h3>
+            <p>
+              Sempre me lembrar de manter minha autenticidade e espalhar amor
+            </p>
+            <div class="box_tag">
+              <h4>autocuidado</h4>
+            </div>
+          </li>
+         
+          </ul>
+        </div>
+        <ul class="cards">
+          <h2>Feito</h2>
+          <li class="card_task">
+            <h3>#boraCodar uma página de login 🧑‍💻</h3>
+            <p>
+           Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.
+            </p>
+            <div class="box_tag">
+              <h4>rocketseat</h4>
+              <h4>desafio</h4>
+            </div>
+          </li>
+          <li class="card_task">
+            <h3>Manter a ofensiva 🔥</h3>
+            <p>
+              Manter minha atividade na plataforma da Rocketseat para não perder
+              a ofensiva
+            </p>
+            <div class="box_tag">
+              <h4>rocketseat</h4>
+            </div>
+          </li>
+          <li class="card_task">
+            <h3>Almoçar 🥗</h3>
+            <p>
+              Me alimentar, aproveitando um momento de descanso para recarregar
+              minhas energias durante o almoço
+            </p>
+            <div class="box_tag">
+              <h4>autocuidado</h4>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
